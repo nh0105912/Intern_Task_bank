@@ -18,7 +18,6 @@ document.querySelectorAll(".dropdown-submenu > a").forEach(function (element) {
   element.addEventListener("click", function (e) {
     e.preventDefault(); // prevent link click
     e.stopPropagation(); // prevent parent dropdown from closing
-
     let parent = this.parentElement;
     parent.classList.toggle("show");
   });
