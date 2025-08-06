@@ -1,23 +1,27 @@
-const navbar = document.querySelector(".navbar");
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 50) {
-    navbar.classList.add("navbar-scrolled");
-  } else {
-    navbar.classList.remove("navbar-scrolled");
-  }
-});
+ // Enable submenu toggle on mobile
+    document.querySelectorAll('.dropdown-submenu > a').forEach(function (element) {
+      element.addEventListener('click', function (e) {
+        if (window.innerWidth < 992) {
+          e.preventDefault();
+          let submenu = this.nextElementSibling;
+          if (submenu) submenu.classList.toggle('show');
+        }
+      });
+    });
 
-const toggler = document.querySelector(".navbar-toggler");
-const collapse = document.querySelector("#navbarContent");
-
-toggler.addEventListener("click", () => {
-  collapse.classList.toggle("bg-white");
-});
-
+    // Auto close navbar on link click (mobile)
+    document.querySelectorAll('.navbar-nav a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        let navbar = document.querySelector('.navbar-collapse');
+        if (navbar.classList.contains('show')) {
+          new bootstrap.Collapse(navbar).toggle();
+        }
+      });
+    });
 document.querySelectorAll(".dropdown-submenu > a").forEach(function (element) {
   element.addEventListener("click", function (e) {
-    e.preventDefault(); // prevent link click
-    e.stopPropagation(); // prevent parent dropdown from closing
+    e.preventDefault();
+    e.stopPropagation(); 
     let parent = this.parentElement;
     parent.classList.toggle("show");
   });
