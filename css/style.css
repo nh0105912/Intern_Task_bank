@@ -68,8 +68,11 @@ a:hover {
   transition: all 0.3s ease;
   background: transparent;
 }
+.navbar-scrolled .navbar-toggler-icon{
+  color: #000 !important;
+}
 
-.navbar-scrolled {
+.navbar-scrolled , .navbar-scrolled .navbar-toggler-icon{
   background-color: #fff !important;
   color: #000;
 }
