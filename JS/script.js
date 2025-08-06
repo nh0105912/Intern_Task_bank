@@ -1,3 +1,4 @@
+
 const navbar = document.querySelector(".navbar");
 window.addEventListener("scroll", () => {
   if (window.scrollY > 50) {
@@ -17,7 +18,7 @@ toggler.addEventListener("click", () => {
 document.querySelectorAll(".dropdown-submenu > a").forEach(function (element) {
   element.addEventListener("click", function (e) {
     e.preventDefault();
-    e.stopPropagation(); 
+    e.stopPropagation();
     let parent = this.parentElement;
     parent.classList.toggle("show");
   });
