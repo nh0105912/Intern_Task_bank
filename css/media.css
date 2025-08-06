@@ -12,6 +12,9 @@
 }
 
 @media screen and (max-width:450px) {
+    .custom_toggle {
+    margin-right: 5rem;
+  }
   .cards_section {
 
     width: 100%;
@@ -38,6 +41,9 @@
 }
 
 @media screen and (max-width:375px) {
+    .custom_toggle {
+    margin-right: 5rem;
+  }
   .cards_section {
 
     width: 100%;
@@ -69,7 +75,7 @@
   }
 
   .custom_toggle span {
-    color: blackF;
+    color: black;
   }
 
   .cards_section {
