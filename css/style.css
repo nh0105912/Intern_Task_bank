@@ -521,9 +521,16 @@
       display: none;
     }
 
-    .iconset {
-      display: none;
+   .iconset {
+      margin: 30px 0;
+      position: relative;
+      display: block;
+
     }
+        .work_section {
+      margin-top: 100px;
+    }
+
   }
 
 @media (min-width: 400px) {
@@ -538,6 +545,16 @@
    .circle {
       display: none;
     }
+    .iconset {
+      margin: 30px 0;
+      position: relative;
+      display: block;
+
+    }
+        .work_section {
+      margin-top: 100px;
+    }
+
 
 }
 
@@ -552,6 +569,9 @@
 
     .circle {
       display: none;
+    }
+    .work_section {
+      margin-top: 100px;
     }
 
     .iconset {
